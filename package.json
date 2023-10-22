@@ -1,0 +1,40 @@
+{
+  "name": "node-async-semaphore",
+  "version": "1.0.0",
+  "description": "A blazing-fast, perfectly typed JavaScript semaphore that manages real resources.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iliachesnokov/node-async-semaphore.git"
+  },
+  "keywords": [
+    "async",
+    "semaphore",
+    "rate",
+    "limiter",
+    "typescript",
+    "node"
+  ],
+  "author": "Ilia Chesnokov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iliachesnokov/node-async-semaphore/issues"
+  },
+  "homepage": "https://github.com/iliachesnokov/node-async-semaphore#readme",
+  "dependencies": {
+    "denque": "^2.1.0"
+  },
+  "devDependencies": {
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  }
+}
