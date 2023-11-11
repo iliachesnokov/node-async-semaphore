@@ -9,7 +9,7 @@ export type SimpleRateLimiterInitOptions = {
   /** The time interval (in milliseconds) in which the specified number of requests are allowed. */
   interval: number;
   /** Used to determine delay. If set, delay is spread evenly across requests, otherwise delay is after all requests. */
-  uniformDistribution: number;
+  uniformDistribution: boolean;
 };
 
 /**
