@@ -97,17 +97,15 @@ export class Semaphore<T> {
    * @returns {boolean} True if a resource was assigned to a request; otherwise, false.
    * @private
    */
-  private _fulfill(): boolean {
+  private _fulfill(): void {
     if (!this.requests.length || !this.resources.length) {
-      return false;
+      return;
     }
 
     const { resolve } = this.requests.shift()!;
     const resource = this.resources.shift()!;
 
     resolve(resource);
-
-    return true;
   }
 
   /**
