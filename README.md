@@ -88,7 +88,7 @@ async function rateLimitedTask() {
 }
 
 for (let i = 0; i < 15; i++) {
-  rateLimitedTask();  // Only the first 10 tasks will run immediately. The next 5 will be queued with an even delay.
+  rateLimitedTask();  // Only the first 10 tasks will run immediately. The next 5 will be queued with a delay.
 }
 ```
 
