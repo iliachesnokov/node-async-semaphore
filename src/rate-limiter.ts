@@ -50,7 +50,7 @@ export class SimpleRateLimiter {
   acquire(): Promise<void> {
     return this.semaphore.acquire().then(() => {
       // Set a timer to release the resource after the delay, allowing another request
-      setTimeout(() => this.semaphore.release, this.delay);
+      setTimeout(() => this.semaphore.release(), this.delay);
     });
   }
 }
